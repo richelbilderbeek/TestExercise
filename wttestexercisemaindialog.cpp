@@ -85,8 +85,8 @@ ribi::WtTestExerciseMainDialog::WtTestExerciseMainDialog()
   ui.m_area_input->setText(
     "-,1+1=?,2/two/Two\n"
     "-,1+1=?,2,1,3,4\n"
-    "ToolTestExerciseQuestion.png,The solution of this equation is:,2/two/Two\n"
-    "ToolTestExerciseQuestion.png,The solution of this equation is:,2,1,3,4");
+    "TestExerciseQuestion.png,The solution of this equation is:,2/two/Two\n"
+    "TestExerciseQuestion.png,The solution of this equation is:,2,1,3,4");
 }
 
 void ribi::WtTestExerciseMainDialog::OnSubmit()

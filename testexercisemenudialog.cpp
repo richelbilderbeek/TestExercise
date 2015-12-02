@@ -35,7 +35,6 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "testtimer.h"
 #include "question.h"
 #include "questiondialog.h"
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
 
@@ -60,7 +59,7 @@ ribi::About ribi::TestExerciseMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "TestExercise",
     "tool to test the Exercise class",
-    "the 2nd of October 2011",
+    "December 2nd of 2015",
     "2011-2015",
     "http://www.richelbilderbeek.nl/ToolTestExercise.htm",
     GetVersion(),
@@ -90,24 +89,17 @@ ribi::Help ribi::TestExerciseMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::TestExerciseMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const Program> p {
-    new ProgramTestExercise
-  };
-  assert(p);
-  return p;
-}
 std::string ribi::TestExerciseMenuDialog::GetVersion() const noexcept
 {
-  return "1.1";
+  return "2.0";
 }
 
 std::vector<std::string> ribi::TestExerciseMenuDialog::GetVersionHistory() const noexcept
 {
   return {
     "2011-09-26: Version 1.0: initial version",
-    "2013-11-05: version 1.1: conformized for ProjectRichelBilderbeekConsole"
+    "2013-11-05: version 1.1: conformized for ProjectRichelBilderbeekConsole",
+    "2015-12-02: version 2.0: moved to own GitHub",
   };
 }
 
